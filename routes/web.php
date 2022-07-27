@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\retrieveController;
+use App\Http\Controllers\aggregatesController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,7 +20,13 @@ use App\Http\Controllers\retrieveController;
 // Route::get('/',[retrieveController::class,'findData']);
 // Route::get('/',[retrieveController::class,'pluckData']);
 // Route::get('/',[retrieveController::class,'multiplepluckData']);
-Route::get('/',[retrieveController::class,'value']);
+// Route::get('/',[retrieveController::class,'value']);
+Route::get('/',[aggregatesController::class,'countRow']);
+Route::get('/',[aggregatesController::class,'max']);
+Route::get('/',[aggregatesController::class,'min']);
+Route::get('/',[aggregatesController::class,'avg']);
+
+
 
 
 
