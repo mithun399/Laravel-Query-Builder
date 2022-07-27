@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\retrieveController;
 use App\Http\Controllers\aggregatesController;
 use App\Http\Controllers\selectController;
+use App\Http\Controllers\mergeController;
+
 
 
 /*
@@ -29,7 +31,9 @@ use App\Http\Controllers\selectController;
 // Route::get('/',[aggregatesController::class,'avg']);
 // Route::get('/',[selectController::class,'distinct']);
 // Route::get('/',[selectController::class,'singleSelect']);
-Route::get('/',[selectController::class,'multipleSelect']);
+// Route::get('/',[selectController::class,'multipleSelect']);
+Route::get('/',[mergeController::class,'mergeData']);
+
 
 
 
