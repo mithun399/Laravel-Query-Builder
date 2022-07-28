@@ -9,6 +9,8 @@ use App\Http\Controllers\joinController;
 use App\Http\Controllers\insertController;
 use App\Http\Controllers\deleteController;
 use App\Http\Controllers\updateController;
+use App\Http\Controllers\ormController;
+
 
 
 
@@ -47,7 +49,9 @@ use App\Http\Controllers\updateController;
 // Route::get('/',[deleteController::class,'deleteData']);
 // Route::get('/',[deleteController::class,'delete']);
 // Route::get('/',[deleteController::class,'trun']);
-Route::get('/',[updateController::class,'onUpdate']);
+// Route::get('/',[updateController::class,'onUpdate']);
+Route::get('/',[ormController::class,'ret']);
+
 
 
 
