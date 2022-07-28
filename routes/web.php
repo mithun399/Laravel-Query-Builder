@@ -5,6 +5,8 @@ use App\Http\Controllers\retrieveController;
 use App\Http\Controllers\aggregatesController;
 use App\Http\Controllers\selectController;
 use App\Http\Controllers\mergeController;
+use App\Http\Controllers\joinController;
+
 
 
 
@@ -32,7 +34,11 @@ use App\Http\Controllers\mergeController;
 // Route::get('/',[selectController::class,'distinct']);
 // Route::get('/',[selectController::class,'singleSelect']);
 // Route::get('/',[selectController::class,'multipleSelect']);
-Route::get('/',[mergeController::class,'mergeData']);
+// Route::get('/',[mergeController::class,'mergeData']);
+// Route::get('/',[joinController::class,'leftJoin']);
+Route::get('/',[joinController::class,'rightJoin']);
+
+
 
 
 
